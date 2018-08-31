@@ -21,10 +21,11 @@ You can repeat for each URL.
 ```
 
 
-The following 3 lines of code is all you need to make a static web server using Express.js!
-const express = require('express');
+The following 4 lines of code is all you need to make a static web server using Express.js!
 
 ```
+const express = require('express');
+
 const app = express();
 
 app.use(express.static(__dirname + '/public'));
