@@ -5,16 +5,21 @@
 This would serve up your markup as a string. Obviously not the preferred method, but it works. 
 You can repeat for each URL.
 
-app.get('/URL', (req, res) => {
-    // res.send('<h1>Hello Express!</h1>');
-    res.send({
-        name: 'Nuwan',
-        likes: [
-            'Swimming',
-            'Sleeping'
-        ]
+```
+
+    app.get('/URL', (req, res) => {
+        // res.send('<h1>Hello Express!</h1>');
+        res.send({
+            name: 'Nuwan',
+            likes: [
+                'Swimming',
+                'Sleeping'
+            ]
+        });
     });
-});
+
+```
+
 
 The following 4 lines of code is all you need to make a static web server using Express.js!
 const express = require('express');
