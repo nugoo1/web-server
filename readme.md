@@ -44,7 +44,11 @@ Let's you create reusable templates like a header and footer.
 
 `npm install hbs`
 
-in your application: `app.set('view engine', 'hbs');`
+in your application: 
+
+```
+app.set('view engine', 'hbs');
+```
 
 ### Files
 
