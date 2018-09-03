@@ -136,14 +136,14 @@ app.use((req, res, next) => {
 ### Git
 #### Heroku
 Heroku commands:
-`
-heroku login
 
-heroku keys:add
+`heroku login`
 
-heroku create
+`heroku keys:add`
 
-git remote -v
+`heroku create`
 
-heroku push
-`
+`git remote -v`
+
+`heroku push`
+
