@@ -120,3 +120,15 @@ hbs.registerHelper('screamIt', (text) => {
     return text.toUpperCase();
 });
 ```
+
+### Express middleware
+Calling the function ``next();`` tells express that we are done and to move on.
+
+Here, we don't call next, so express will not move on to the next function. Instead, it'll just stay here - perfect for adding an 'under maintenance'
+message and when we don't want the server to response with any of the functions below this.
+
+```
+app.use((req, res, next) => {
+    res.render('maintenance.hbs');
+});
+```
