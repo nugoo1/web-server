@@ -138,8 +138,12 @@ app.use((req, res, next) => {
 Heroku commands:
 `
 heroku login
+
 heroku keys:add
+
 heroku create
+
 git remote -v
+
 heroku push
 `
